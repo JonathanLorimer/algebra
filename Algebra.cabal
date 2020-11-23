@@ -1,0 +1,38 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 12b97f669dd8d6655c8fbcc9dec9b1b29fa9e252ecff08079817089dd61e6d26
+
+name:           Algebra
+version:        0.1.0
+synopsis:       Trying to port the ideas I learn in Elements of Modern Abstract Algebra by Kenneth Miller
+description:    See README at <https://github.com/jonathanlorimer/algebra#readme>
+category:       Learning
+homepage:       https://github.com/jonathanlorimer/algebra#readme
+bug-reports:    https://github.com/jonathanlorimer/algebra/issues
+maintainer:     Jonathan Lorimer
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/jonathanlorimer/algebra
+
+library
+  exposed-modules:
+      Algebra
+  hs-source-dirs:
+      src
+  default-extensions: RankNTypes ScopedTypeVariables TypeApplications TypeFamilies
+  ghc-options: -Wall
+  build-depends:
+      aeson
+    , base >=4.9 && <5
+    , containers
+    , lens
+    , lens-aeson
+    , mtl
+    , text
+  default-language: Haskell2010

@@ -1,5 +1,29 @@
-src/CH5_Operators.hs:7:1: warning: [-Wunused-imports]
-    The import of ‘Control.Lens’ is redundant
-  |
-7 | import Control.Lens
-  | ^^^^^^^^^^^^^^^^^^^
+All good (1 module, at 22:00:25)
+ 
+/Users/jonathanlorimer/OSS/algebra/src/Algebra.hs:33:1
+$> inv (Sum 3) <> Sum 3
+Sum {unSum = 0}
+ 
+/Users/jonathanlorimer/OSS/algebra/src/Algebra.hs:35:1
+$> Sum 3 <> inv (Sum 3)
+Sum {unSum = 0}
+ 
+/Users/jonathanlorimer/OSS/algebra/src/Algebra.hs:37:1
+$> mempty :: Sum
+Sum {unSum = 0}
+ 
+/Users/jonathanlorimer/OSS/algebra/src/Algebra.hs:52:1
+$> inv (Product 3)
+Product {unProduct = 0.33333334}
+ 
+/Users/jonathanlorimer/OSS/algebra/src/Algebra.hs:54:1
+$> inv (Product 3) <> Product 3
+Product {unProduct = 1.0}
+ 
+/Users/jonathanlorimer/OSS/algebra/src/Algebra.hs:56:1
+$> Product 3 <> inv (Product 3)
+Product {unProduct = 1.0}
+ 
+/Users/jonathanlorimer/OSS/algebra/src/Algebra.hs:58:1
+$> mempty :: Product
+Product {unProduct = 1.0}
