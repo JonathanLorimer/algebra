@@ -1,0 +1,29 @@
+name: "Algebra"
+version: 0.1.0
+synopsis: "Trying to port the ideas I learn in Elements of Modern Abstract Algebra by Kenneth Miller"
+description: "See README at <https://github.com/jonathanlorimer/algebra#readme>"
+maintainer: Jonathan Lorimer
+github: jonathanlorimer/algebra
+category: Learning
+
+ghc-options: -Wall
+
+dependencies:
+  - base >= 4.9 && < 5
+  - aeson
+  - containers
+  - lens
+  - lens-aeson
+  - mtl
+  - text
+
+default-extensions:
+  - RankNTypes
+  - ScopedTypeVariables
+  - TypeApplications
+  - TypeFamilies
+
+
+library:
+  source-dirs: src
+  other-modules: []
